@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Badminton</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <div class="logo me-auto">
+        <h1><a href="index.html">Badminton</a></h1>
+      </div>
+
+      <ul class="nav navbar justify-content-end ">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  href="info.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="reviews.html">Review</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">Creator</a>
+        </li>
+      </ul>
+      <!-- .navbar -->
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main id="main">
+    <div class="container">
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials mt-5">
+        <div class="container">
+
+          <div class="section-title" data-aos="fade-up">
+            <h2>Reviews</h2>
+            <p>Learn how other players around the globe enjoy badminton as much as I do.</p>
+          </div>
+
+          <div id="section-alert"></div>
+
+          <div class="row mb-3">
+            <form id="feedback-form" class="font-size-13" onsubmit="addReview(event)">
+              <div class="form-group mb-2">
+                <label class="mb-2">Would you like to share your insights to others?</label>
+                <textarea class="form-control" rows="2" name="content" id="content" required></textarea>
+              </div>
+              <div class="form-group mb-2">
+                <label class="mb-2">Name</label>
+                <input type="text" class="form-control" name="name" id="name" required>
+              </div>
+              <div class="form-group row">
+                <label class="col-sm-1 col-form-label mt-1 ">Satisfaction: </label>
+                <div class="col-sm-11 p-0">
+                  <div class="rate mt-2">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 text-right">
+                <input type="submit" value="Submit" class="review-btn">
+              </div>
+            </form>
+          </div>
+
+          <div id="section-reviews"></div>
+
+        </div>
+      </section><!-- End Testimonials Section -->
+    </div>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Badminton</h3>
+              <p>
+                A website about my favorite game<br>
+                Melchi Lloyd S. Aballe: WEB222 Final Assessment – Winter 2023<br><br>
+                <strong>Email:</strong> melchiaballe@gmail.com<br>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="info.html">About</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="reviews.html">Reviews</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">Creator</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-7 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>
+              Want to learn more about badminton? <br>
+              Sign up to receive more information about the game via email,
+              and you'll be the first to know about its insiders.
+            </p>
+            <form method="post" onsubmit="joinNewsletter(event)">
+              <input type="hidden" name="name" value="Melchi Lloyd S. Aballe">
+              <input type="email" name="email"><input type="submit" value="Join">
+            </form>
+            <small id="section-info" class="text-success"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Badminton</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/newsletter.js"></script>
+
+
+</body>
+
+</html>
