@@ -1732,7 +1732,7 @@ section {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 400px) {
   #header .logo h1 {
     font-size: 18px!important;
   }
