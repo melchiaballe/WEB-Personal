@@ -1701,3 +1701,43 @@ section {
 .rate > label:hover ~ input:checked ~ label {
   color: #c59b08;
 }
+
+
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 10px 0 10px 30px; */
+  font-size: 13.9px;
+  font-family: "Poppins", sans-serif;
+  color: #7b909a;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.nav-link {
+  display: block;
+  padding: 0.3rem 0.3rem;
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+  #header .logo h1 {
+    font-size: 20px!important;
+  }
+
+  .nav-link {
+    padding: 0.3rem 0.3rem!important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #header .logo h1 {
+    font-size: 18px!important;
+  }
+
+  .navbar a {
+    font-size: 12.8px!important;
+  }
+}
